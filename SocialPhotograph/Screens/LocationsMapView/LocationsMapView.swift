@@ -8,7 +8,7 @@ import SwiftUI
 import MapKit
 
 struct LocationsMapView: View {
-    @State private var shouldPresentAdding = false
+    @State private var shouldPresentAddingNewLocation = false
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Location.name, ascending: true)],
@@ -21,12 +21,15 @@ struct LocationsMapView: View {
             Map(coordinateRegion: $region, annotationItems: locations) { location in
                 MapAnnotation(coordinate: location.coordinate) {
                     NavigationLink {
-                            Text("Details View")
-                    } label: {
+                        LocationDetailsView(viewModel: LocationDetailsViewModel(location: location))
+                } label: {
                         PlaceAnnotationView(name: location.name ?? "")
                     }
                 }
             }
+            .sheet(isPresented: $shouldPresentAddingNewLocation, content: {
+                AddingLocationNewView(viewModel: AddingLocationNewViewModel(viewContext: viewContext))
+            })
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
@@ -41,6 +44,6 @@ struct LocationsMapView: View {
     }
     
     private func addItem() {
-        shouldPresentAdding = true
+        shouldPresentAddingNewLocation = true
     }
 }

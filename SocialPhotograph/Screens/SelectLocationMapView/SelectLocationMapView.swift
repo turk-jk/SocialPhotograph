@@ -32,7 +32,8 @@ struct SelectLocationMapView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
-                .padding([.trailing, .leading, .bottom], 16)
+                .padding([.trailing, .leading], 16)
+                .padding(.bottom, 32)
                 
             }
             .ignoresSafeArea(edges: .bottom)

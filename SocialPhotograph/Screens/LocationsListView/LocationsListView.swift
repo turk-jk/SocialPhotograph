@@ -39,8 +39,10 @@ struct LocationsListView: View {
                 )
             }
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                if !locations.isEmpty {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
                 }
                 ToolbarItem {
                     Button(action: addItem) {

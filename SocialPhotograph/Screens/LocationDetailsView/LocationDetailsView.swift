@@ -58,12 +58,15 @@ struct LocationDetailsView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
                     .padding([.trailing, .leading], 16)
+                    .padding(.bottom, 110)
                 }
                 
             }
             .toolbar {
                 ToolbarItem {
-                    Button(action: viewModel.deleteLocation) {
+                    Button {
+                        viewModel.deleteLocation()
+                    } label: {
                         Label("Delete Location", systemImage: "trash")
                     }
                 }
