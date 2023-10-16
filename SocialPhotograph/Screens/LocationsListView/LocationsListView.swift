@@ -11,6 +11,7 @@ import SwiftUI
 struct LocationsListView: View {
     @State private var showDeletionErrorAlert = false
     @State private var showAdditionErrorAlert = false
+    @State private var shouldPresentAddingNewLocation = false
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Location.name, ascending: true)],
@@ -28,6 +29,9 @@ struct LocationsListView: View {
                 }
                 .onDelete(perform: deleteLocations)
             }
+            .sheet(isPresented: $shouldPresentAddingNewLocation, content: {
+                AddingLocationNewView(viewModel: AddingLocationNewViewModel(viewContext: viewContext))
+            })
             .alert(isPresented: $showDeletionErrorAlert) {
                 Alert(
                     title: Text("Deletion Error"),
@@ -67,6 +71,6 @@ struct LocationsListView: View {
         }
     }
     private func addItem() {
-        print("addItem")
+        shouldPresentAddingNewLocation = true
     }
 }
