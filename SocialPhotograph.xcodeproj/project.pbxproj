@@ -133,16 +133,16 @@
 		BA54B6D62ADCEA69002FC4AD /* SocialPhotograph */ = {
 			isa = PBXGroup;
 			children = (
-				BA54B7292ADCEA6A002FC4AD /* Models */,
-				BA54B7262ADCEA6A002FC4AD /* Data */,
-				BA54B7212ADCEA6A002FC4AD /* CoreData */,
-				BA54B71E2ADCEA6A002FC4AD /* Helpers */,
-				BA54B7062ADCEA6A002FC4AD /* Screens */,
-				BA54B6D72ADCEA69002FC4AD /* SocialPhotographApp.swift */,
 				BA54B6DB2ADCEA6A002FC4AD /* Assets.xcassets */,
+				BA54B7212ADCEA6A002FC4AD /* CoreData */,
+				BA54B7262ADCEA6A002FC4AD /* Data */,
+				BA54B71E2ADCEA6A002FC4AD /* Helpers */,
+				BA54B7292ADCEA6A002FC4AD /* Models */,
 				BA54B6E02ADCEA6A002FC4AD /* Persistence.swift */,
-				BA54B6E22ADCEA6A002FC4AD /* SocialPhotograph.xcdatamodeld */,
 				BA54B6DD2ADCEA6A002FC4AD /* Preview Content */,
+				BA54B7062ADCEA6A002FC4AD /* Screens */,
+				BA54B6E22ADCEA6A002FC4AD /* SocialPhotograph.xcdatamodeld */,
+				BA54B6D72ADCEA69002FC4AD /* SocialPhotographApp.swift */,
 			);
 			path = SocialPhotograph;
 			sourceTree = "<group>";
@@ -158,9 +158,9 @@
 		BA54B6EC2ADCEA6A002FC4AD /* SocialPhotographTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA54B7312ADCEA6A002FC4AD /* ViewModels */,
-				BA54B6ED2ADCEA6A002FC4AD /* SocialPhotographTests.swift */,
 				BA54B72C2ADCEA6A002FC4AD /* CoreData */,
+				BA54B6ED2ADCEA6A002FC4AD /* SocialPhotographTests.swift */,
+				BA54B7312ADCEA6A002FC4AD /* ViewModels */,
 			);
 			path = SocialPhotographTests;
 			sourceTree = "<group>";
@@ -177,11 +177,11 @@
 		BA54B7062ADCEA6A002FC4AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				BA54B7192ADCEA6A002FC4AD /* LocationDetailsView */,
 				BA54B7162ADCEA6A002FC4AD /* AddingLocationNewView */,
-				BA54B7132ADCEA6A002FC4AD /* SelectLocationMapView */,
-				BA54B7102ADCEA6A002FC4AD /* LocationsMapView */,
+				BA54B7192ADCEA6A002FC4AD /* LocationDetailsView */,
 				BA54B70D2ADCEA6A002FC4AD /* LocationsListView */,
+				BA54B7102ADCEA6A002FC4AD /* LocationsMapView */,
+				BA54B7132ADCEA6A002FC4AD /* SelectLocationMapView */,
 				BA54B70A2ADCEA6A002FC4AD /* TabView */,
 			);
 			path = Screens;
@@ -241,8 +241,8 @@
 		BA54B71E2ADCEA6A002FC4AD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BA54B7242ADCEA6A002FC4AD /* TestData.swift */,
 				BA54B7342ADCEA6A002FC4AD /* Extensions.swift */,
+				BA54B7242ADCEA6A002FC4AD /* TestData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 		BA54B7312ADCEA6A002FC4AD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				BA54B7322ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift */,
 				BA54B7382ADCEA6A002FC4AD /* AddingLocationNewViewModelTests.swift */,
+				BA54B7322ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
