@@ -21,6 +21,7 @@
 		BA54B7152ADCEA6A002FC4AD /* SelectLocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B7142ADCEA6A002FC4AD /* SelectLocationMapView.swift */; };
 		BA54B7182ADCEA6A002FC4AD /* AddingLocationNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B7172ADCEA6A002FC4AD /* AddingLocationNewView.swift */; };
 		BA54B71B2ADCEA6A002FC4AD /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B71A2ADCEA6A002FC4AD /* LocationDetailsView.swift */; };
+		BA54B71D2ADCEA6A002FC4AD /* README in Resources */ = {isa = PBXBuildFile; fileRef = BA54B71C2ADCEA6A002FC4AD /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BA54B7142ADCEA6A002FC4AD /* SelectLocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationMapView.swift; sourceTree = "<group>"; };
 		BA54B7172ADCEA6A002FC4AD /* AddingLocationNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingLocationNewView.swift; sourceTree = "<group>"; };
 		BA54B71A2ADCEA6A002FC4AD /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
+		BA54B71C2ADCEA6A002FC4AD /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		BA54B6CB2ADCEA69002FC4AD = {
 			isa = PBXGroup;
 			children = (
+				BA54B71C2ADCEA6A002FC4AD /* README */,
 				BA54B6D62ADCEA69002FC4AD /* SocialPhotograph */,
 				BA54B6EC2ADCEA6A002FC4AD /* SocialPhotographTests */,
 				BA54B6F62ADCEA6A002FC4AD /* SocialPhotographUITests */,
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA54B71D2ADCEA6A002FC4AD /* README in Resources */,
 				BA54B6DF2ADCEA6A002FC4AD /* Preview Assets.xcassets in Resources */,
 				BA54B6DC2ADCEA6A002FC4AD /* Assets.xcassets in Resources */,
 			);
