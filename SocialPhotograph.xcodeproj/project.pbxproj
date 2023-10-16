@@ -28,6 +28,9 @@
 		BA54B7282ADCEA6A002FC4AD /* defaultLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = BA54B7272ADCEA6A002FC4AD /* defaultLocations.json */; };
 		BA54B72B2ADCEA6A002FC4AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B72A2ADCEA6A002FC4AD /* LocationModel.swift */; };
 		BA54B72E2ADCEA6A002FC4AD /* PersistenceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B72D2ADCEA6A002FC4AD /* PersistenceControllerTests.swift */; };
+		BA54B7302ADCEA6A002FC4AD /* LocationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B72F2ADCEA6A002FC4AD /* LocationDetailsViewModel.swift */; };
+		BA54B7332ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B7322ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift */; };
+		BA54B7352ADCEA6A002FC4AD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54B7342ADCEA6A002FC4AD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		BA54B7272ADCEA6A002FC4AD /* defaultLocations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultLocations.json; sourceTree = "<group>"; };
 		BA54B72A2ADCEA6A002FC4AD /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		BA54B72D2ADCEA6A002FC4AD /* PersistenceControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceControllerTests.swift; sourceTree = "<group>"; };
+		BA54B72F2ADCEA6A002FC4AD /* LocationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewModel.swift; sourceTree = "<group>"; };
+		BA54B7322ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		BA54B7342ADCEA6A002FC4AD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		BA54B6EC2ADCEA6A002FC4AD /* SocialPhotographTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA54B7312ADCEA6A002FC4AD /* ViewModels */,
 				BA54B6ED2ADCEA6A002FC4AD /* SocialPhotographTests.swift */,
 				BA54B72C2ADCEA6A002FC4AD /* CoreData */,
 			);
@@ -221,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				BA54B71A2ADCEA6A002FC4AD /* LocationDetailsView.swift */,
+				BA54B72F2ADCEA6A002FC4AD /* LocationDetailsViewModel.swift */,
 			);
 			path = LocationDetailsView;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				BA54B7242ADCEA6A002FC4AD /* TestData.swift */,
+				BA54B7342ADCEA6A002FC4AD /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -263,6 +272,14 @@
 				BA54B72D2ADCEA6A002FC4AD /* PersistenceControllerTests.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BA54B7312ADCEA6A002FC4AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA54B7322ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +416,7 @@
 			files = (
 				BA54B70F2ADCEA6A002FC4AD /* LocationsListView.swift in Sources */,
 				BA54B7152ADCEA6A002FC4AD /* SelectLocationMapView.swift in Sources */,
+				BA54B7302ADCEA6A002FC4AD /* LocationDetailsViewModel.swift in Sources */,
 				BA54B7232ADCEA6A002FC4AD /* Location+Extensions.swift in Sources */,
 				BA54B7252ADCEA6A002FC4AD /* TestData.swift in Sources */,
 				BA54B6E42ADCEA6A002FC4AD /* SocialPhotograph.xcdatamodeld in Sources */,
@@ -406,6 +424,7 @@
 				BA54B7182ADCEA6A002FC4AD /* AddingLocationNewView.swift in Sources */,
 				BA54B71B2ADCEA6A002FC4AD /* LocationDetailsView.swift in Sources */,
 				BA54B7122ADCEA6A002FC4AD /* LocationsMapView.swift in Sources */,
+				BA54B7352ADCEA6A002FC4AD /* Extensions.swift in Sources */,
 				BA54B6E12ADCEA6A002FC4AD /* Persistence.swift in Sources */,
 				BA54B72B2ADCEA6A002FC4AD /* LocationModel.swift in Sources */,
 				BA54B6D82ADCEA69002FC4AD /* SocialPhotographApp.swift in Sources */,
@@ -417,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA54B7332ADCEA6A002FC4AD /* LocationDetailsViewModelTests.swift in Sources */,
 				BA54B72E2ADCEA6A002FC4AD /* PersistenceControllerTests.swift in Sources */,
 				BA54B6EE2ADCEA6A002FC4AD /* SocialPhotographTests.swift in Sources */,
 			);
