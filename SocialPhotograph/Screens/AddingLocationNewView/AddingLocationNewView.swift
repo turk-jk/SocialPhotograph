@@ -75,7 +75,7 @@ struct AddingLocationNewView: View {
                 
             }
             .sheet(isPresented: $viewModel.shouldShowMapToSelect, content: {
-                Text("Select Location MapView")
+                SelectLocationMapView(lat: $viewModel.lat, lng: $viewModel.lng)
             })
             .onChange(of: viewModel.shouldDismiss) { shouldDismiss in
                 if shouldDismiss {
