@@ -27,6 +27,3 @@ Assumptions & decisions:-
 - Use CoreData to persist data
 - iOS 16.0 is minimum.
 - User can modify and delete default locations
-
-
-
